@@ -88,3 +88,24 @@ less - lets you read through a file page by page.
 rmdir - remove a directory
 rm - remove a file
 help - get help on a term or command, I believe this is the Windows shell term, not the OS X one.
+
+# 1.5 Tracking Changes
+
+Tracking adding changes helps developers because it allows a road map to find bugs should they arise. If at some point your code stops working, you can go back the point where it was working and then solve from there.
+
+A commit is a save point that you can revert back to.
+
+Commit messages should be simple, short descriptions of what changes were made. They should be written in the imperative verb tense for compatibility. If longer than one line, the message can have a title line and then a body that includes more description if necessary.
+
+The HEAD^ argument allows you to reference, access and change files from the last commit.
+
+The three git stages are modified, staged, and committed. Modified simply means a file has been changed. Staged means the file has been added to the stage to be committed on the next commit. And commit means it has been committed to the repository. to go from stage to stage you use the commands “git add” and “git commit”.
+
+GIT CHEAT SHEET
+git add .  ==> add modified files to the stage
+git commit ==> commit all the files in the staging area to the repository.
+git status ==> check the current status of files and where they are in the git progression.
+
+A pull request is used to bring a remote repository onto your local machine. Doing this will “pull" will automatically merge this with your local repository, or you can use “fetch” and then “merge”.
+
+Pull requests and working on branches are preferable when working with teams in order to ensure that people are again working in sync and to make sure that people are not working from code that hasn’t been approved.
