@@ -109,3 +109,20 @@ git status ==> check the current status of files and where they are in the git p
 A pull request is used to bring a remote repository onto your local machine. Doing this will “pull" will automatically merge this with your local repository, or you can use “fetch” and then “merge”.
 
 Pull requests and working on branches are preferable when working with teams in order to ensure that people are again working in sync and to make sure that people are not working from code that hasn’t been approved.
+
+
+# 1.6 Your Website, part 1
+
+http://joecase.github.io/
+
+To create a new repository on Github, click the plus icon next to your photo on your github page, then select “New Repository”. To clone the repo to your local machine, to the repo on gihub and copy the URL for the repo (SSH if you have SSH setup, HTTPS if you do not). to to terminal, navigate to the directory you want to clone the repo to and give the command “git clone” and then past the URL
+
+Open source is the process of sharing the source code to software and making it free and open for anyone to use, change and improve upon.
+
+I think open source is fantastic for certain things. It is a kind of utopia. Obviously it gives anyone the chance to start a project from an already rich code base, and also allows free tools to be give out to a lot of people. Obviously if I had some kind of revolutionary tech I was developing, I probably wouldn’t make it open source, but I think a lot of the greatest technology advancements have come from open source software.
+
+I guess the importance of licenses is to somehow create legal precedence, if something did arise. I think most of the time, if you are open source, you probably don’t care much what license you are using. From the opposite of a protection standpoint, a license can give clear permission to anyone to help out, which they might not if they think they won’t be able to use it. I think it is a simple good practice.
+
+The pulling process was solidified. Since “pulling” goes in multiple directions I was a bit confused.
+
+Nope, I figured it out mostly from the provided resources and I had a bit of experience with it before.
