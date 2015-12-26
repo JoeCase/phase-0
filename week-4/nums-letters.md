@@ -16,17 +16,57 @@ The difference between float and integer division is that doing float division w
 
 **Integer division**
 7/2
-"How many complet 2s are there in 2?"
+"How many complete 2s are there in 7?"
 
 With integer division you can't cut a number in half so it returns how many complete divisor units can be found. Essentially it does your expected calclator division then rounds down, not returning the remainder.
 
 
 ### Calculate hours in a year and minutes in a decade.
-'''
-# Hours in a year
+
+Hours in a year
+```
 puts 365 * 24
+```
 
-# Minutes in a decade
+Minutes in a decade
+```
 puts ((60 * 24) * 365) * 10
-'''
+```
 
+
+###How does Ruby handle addition, subtraction, multiplication, and division of numbers?
+
+
+###What is the difference between integers and floats?
+Integers are whole numbers, not fractional. So an integer never has a decimal. Integers can be positive or negative.
+
+Floats are numbers with a decimal, thus they can express fractional, not whole numbers.
+
+
+###What is the difference between integer and float division?
+Integer division will never give a fractional answer. It ignores any remainder and rounds down to the nearest whole number. It essentially calculated how many whole versions of a number are in another number.
+
+Float divison will provide an answer with a decimal. It essentally asks "How many times does this number go exactly into this other number, including fractionally?".
+
+
+###What are strings? Why and when would you use them?
+A string is a collection of characters that are taken literally by the comptuer. It can include letter or number characters, but numbers will not be caclcuted as number is they are inside a string.
+
+
+###What are local variables? Why and when would you use them?
+
+Local variables are variables that are only accesible to a certain scope. A scope can be either a method, or a page or a program. Thus a variable local to a file would only be accesible to methods and operations within that file. A local variable needs to be defined, as it will not get a nil declaration by default. You use them to store information necessary to you program. They can be redifined at any point.
+
+
+###How was this challenge? Did you get a good review of some of the basics?
+This challenge was good. It was nice to get a review of some of the basics and to just keep practicing a workflow.
+
+
+
+##Links to above exercises:
+
+**basic-math.rb =>** https://github.com/JoeCase/phase-0/blob/master/week-4/basic-math.rb
+
+**nums-letters.rb =>** https://github.com/JoeCase/phase-0/blob/master/week-4/nums-letters.md
+
+**simple-string.rb=>** https://github.com/JoeCase/phase-0/blob/master/week-4/simple-string.rb
