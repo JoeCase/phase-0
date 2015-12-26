@@ -36,6 +36,8 @@ puts ((60 * 24) * 365) * 10
 
 ###How does Ruby handle addition, subtraction, multiplication, and division of numbers?
 
+Ruby handles it much as the same as a typical calculator would, with the exception of the float and integer diferentiation for division. Ruby will do mathematic operations on number whether they are explicit or stored in variables.
+
 
 ###What is the difference between integers and floats?
 Integers are whole numbers, not fractional. So an integer never has a decimal. Integers can be positive or negative.
