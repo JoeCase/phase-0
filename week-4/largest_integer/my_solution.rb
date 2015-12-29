@@ -1,6 +1,6 @@
 # Largest Integer
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge by myself.
 
 # largest_integer is a method that takes an array of integers as its input
 # and returns the largest integer in the array
@@ -12,5 +12,9 @@
 
 # Your Solution Below
 def largest_integer(list_of_nums)
-  # Your code goes here!
+    large_num = list_of_nums[0]
+  list_of_nums.each do |value|
+    large_num = value if value > large_num
+  end
+  large_num
 end

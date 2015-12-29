@@ -6,5 +6,8 @@
 # Your Solution Below
 
 def array_concat(array_1, array_2)
-  # Your code here
+  new_array = []
+  array_1.each {|val| new_array.push (val)}
+  array_2.each {|val| new_array.push (val)}
+  new_array
 end

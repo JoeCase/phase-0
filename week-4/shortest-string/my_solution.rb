@@ -12,5 +12,9 @@
 
 #Your Solution Below
 def shortest_string(list_of_words)
-  # Your code goes here!
+  shorty = list_of_words[0]
+  list_of_words.each do |stringy|
+    shorty = stringy if stringy.length < shorty.length
+  end
+  shorty
 end

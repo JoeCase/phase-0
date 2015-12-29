@@ -1,6 +1,6 @@
 # Count Between
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge by myself.
 
 # count_between is a method with three arguments:
 #   1. An array of integers
@@ -15,5 +15,9 @@
 # Your Solution Below
 
 def count_between(list_of_integers, lower_bound, upper_bound)
-  # Your code goes here!
+  sum = 0
+  list_of_integers.each do |value|
+    sum = sum + 1 if value >= lower_bound && value <= upper_bound
+  end
+  sum
 end

@@ -1,6 +1,6 @@
 # Smallest Integer
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge by myself.
 
 # smallest_integer is a method that takes an array of integers as its input
 # and returns the smallest integer in the array
@@ -12,5 +12,9 @@
 
 # Your Solution Below
 def smallest_integer(list_of_nums)
-  # Your code goes here!
+  smallest_num = list_of_nums[0]
+  list_of_nums.each do |value|
+    smallest_num = value if value < smallest_num
+  end
+  smallest_num
 end
