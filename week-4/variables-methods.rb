@@ -45,6 +45,6 @@ How do you run a ruby program from the command line?
     LINKS TO OTHER FILES:
     Address solution: https://github.com/JoeCase/phase-0/blob/master/week-4/address/my_solution.rb
 
-    Matt solution: https://github.com/JoeCase/phase-0/blob/master/week-4/math/my_solution.rb
+    Math solution: https://github.com/JoeCase/phase-0/blob/master/week-4/math/my_solution.rb
 
   =end
