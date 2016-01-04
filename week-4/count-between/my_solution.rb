@@ -14,10 +14,18 @@
 
 # Your Solution Below
 
+# Solution 1
+
 def count_between(list_of_integers, lower_bound, upper_bound)
   sum = 0
   list_of_integers.each do |value|
     sum = sum + 1 if value >= lower_bound && value <= upper_bound
   end
   sum
+end
+
+# Solution 2 refactored
+
+def count_between(list_of_integers, lower_bound, upper_bound)
+  list_of_integers.count { |i| i.between?(lower_bound, upper_bound)}
 end

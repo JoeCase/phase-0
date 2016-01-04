@@ -11,10 +11,19 @@
 # If +list_of_words+ is empty the method should return nil
 
 #Your Solution Below
+
+# Solution 1
+
 def shortest_string(list_of_words)
   shorty = list_of_words[0]
   list_of_words.each do |stringy|
     shorty = stringy if stringy.length < shorty.length
   end
   shorty
+end
+
+# Solution 2 Refactored
+
+def shortest_string(list_of_words)
+  list_of_words.min_by(&:length)
 end
