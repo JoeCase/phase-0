@@ -64,3 +64,31 @@ print array_test2
 
 
 # 4. Reflection
+
+# Were you successful in breaking the problem down into small steps?
+
+# I think we did a good job. Our pseudocode was a bit brief, but that seemed ok.
+
+# Once you had written your pseudocode, were you able to easily translate it into code? What difficulties and successes did you have?
+
+# We translated our pseudocode pretty well, but as mentioned, it was a bit brief so we expaned on that in the actual coding.
+
+
+# Was your initial solution successful at passing the tests? If so, why do you think that is? If not, what were the errors you encountered and what did you do to resolve them?
+
+# Almost. At first we couldn't get the non-destructive version to work. First it was returning the wrong thing, then it was returning something identical, but technically desctructive as the object id was the same when it shouldn't have been. This took some figuring out.
+
+
+# When you refactored, did you find any existing methods in Ruby to clean up your code?
+
+# Not yet. Again, refactoring needs to be done.
+
+
+# How readable is your solution? Did you and your pair choose descriptive variable names?
+
+# I think it is pretty readable, as it isn't too compacted and our variable names are descriptive.
+
+
+# What is the difference between destructive and non-destructive methods in your own words?
+
+# Destructive methods permanently alter the starting object. non-destructive methods leave the original objects untouched.
