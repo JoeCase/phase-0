@@ -2,7 +2,7 @@
 
 # I worked on this challenge with Jeremy Oltean
 
-# I spent [] hours on this challenge.
+# I spent 1.4 hours on this challenge.
 
 
 # Complete each step below according to the challenge directions and
