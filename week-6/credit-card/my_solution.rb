@@ -59,7 +59,38 @@ end
 
 
 
-# Refactored Solution
+# Refactored Solution 1
+
+# class CreditCard
+#   def initialize(number)
+#     raise ArgumentError.new("Please enter a 16 digit number.") if number.to_s.length != 16
+#     @number = number
+#   end
+#   def check_card
+#     num_array = @number.to_s.split("").map{|n| n.to_i}
+#     num_array.map!.with_index { |x,i| i == 0 || i % 2 == 0 ? x * 2 : x }
+#     sum = 0
+#     num_array.each { |x| x < 10 ? sum += x : sum += (x - 10) + 1 }
+#     sum % 10 == 0
+#   end
+# end
+
+# Refactored Solution 2 : One less variable
+
+# class CreditCard
+#   def initialize(number)
+#     raise ArgumentError.new("Please enter a 16 digit number.") if number.to_s.length != 16
+#     @number = number
+#   end
+#   def check_card
+#     num_array = @number.to_s.split("").map{|n| n.to_i}
+#     num_array.map!.with_index { |x,i| i == 0 || i % 2 == 0 ? x * 2 : x }
+#     num_array.inject { |sum,x| x < 10 ? sum += x : sum += (x - 10) + 1 } % 10 == 0
+#   end
+# end
+
+
+# Refactored Solution 3 : The one liner!
 
 class CreditCard
   def initialize(number)
@@ -67,14 +98,9 @@ class CreditCard
     @number = number
   end
   def check_card
-    sum = 0
-    num_array = @number.to_s.split("").map{|n| n.to_i}
-    num_array.map!.with_index { |x,i| i == 0 || i % 2 == 0 ? x * 2 : x }
-    num_array.each { |x| x < 10 ? sum += x : sum += (x - 10) + 1 }
-    sum % 10 == 0
+    @number.to_s.split("").map{|n| n.to_i}.map!.with_index { |x,i| i == 0 || i % 2 == 0 ? x * 2 : x }.inject { |sum,x| x < 10 ? sum += x : sum += (x - 10) + 1 } % 10 == 0
   end
 end
-
 
 # Reflection
 
@@ -83,7 +109,7 @@ end
 # We did pretty well on it. I think the most difficult part was figuring out how to add the numbers together in a simple way and avoid converting or iterating over the array again. We used a mathematical solution which was pretty simple.
 
 # What new methods did you find to help you when you refactored?
-# We just used .map! but used it with_index, which is very handy.
+# We just used .map! but used it with_index, which is very handy. Also went back and used .inject which is great for removing the sum variable. This finally got it down to one, pretty unreadable, line.
 
 # What concepts or learnings were you able to solidify in this challenge?
 
