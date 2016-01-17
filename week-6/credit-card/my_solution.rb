@@ -61,33 +61,33 @@ end
 
 # Refactored Solution 1
 
-# class CreditCard
-#   def initialize(number)
-#     raise ArgumentError.new("Please enter a 16 digit number.") if number.to_s.length != 16
-#     @number = number
-#   end
-#   def check_card
-#     num_array = @number.to_s.split("").map{|n| n.to_i}
-#     num_array.map!.with_index { |x,i| i == 0 || i % 2 == 0 ? x * 2 : x }
-#     sum = 0
-#     num_array.each { |x| x < 10 ? sum += x : sum += (x - 10) + 1 }
-#     sum % 10 == 0
-#   end
-# end
+class CreditCard
+  def initialize(number)
+    raise ArgumentError.new("Please enter a 16 digit number.") if number.to_s.length != 16
+    @number = number
+  end
+  def check_card
+    num_array = @number.to_s.split("").map{|n| n.to_i}
+    num_array.map!.with_index { |x,i| i == 0 || i % 2 == 0 ? x * 2 : x }
+    sum = 0
+    num_array.each { |x| x < 10 ? sum += x : sum += (x - 10) + 1 }
+    sum % 10 == 0
+  end
+end
 
 # Refactored Solution 2 : One less variable
 
-# class CreditCard
-#   def initialize(number)
-#     raise ArgumentError.new("Please enter a 16 digit number.") if number.to_s.length != 16
-#     @number = number
-#   end
-#   def check_card
-#     num_array = @number.to_s.split("").map{|n| n.to_i}
-#     num_array.map!.with_index { |x,i| i == 0 || i % 2 == 0 ? x * 2 : x }
-#     num_array.inject { |sum,x| x < 10 ? sum += x : sum += (x - 10) + 1 } % 10 == 0
-#   end
-# end
+class CreditCard
+  def initialize(number)
+    raise ArgumentError.new("Please enter a 16 digit number.") if number.to_s.length != 16
+    @number = number
+  end
+  def check_card
+    num_array = @number.to_s.split("").map{|n| n.to_i}
+    num_array.map!.with_index { |x,i| i == 0 || i % 2 == 0 ? x * 2 : x }
+    num_array.inject { |sum,x| x < 10 ? sum += x : sum += (x - 10) + 1 } % 10 == 0
+  end
+end
 
 
 # Refactored Solution 3 : The one liner!
