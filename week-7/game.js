@@ -89,7 +89,11 @@ var player = {
 },
   move: function() {
 
+<<<<<<< HEAD
           direction = prompt.get("What's your move?")
+=======
+          direction = prompt("What's your move?")
+>>>>>>> master
 
           // Set temp new position variable to check
           var new_pos = this.position;
@@ -112,12 +116,21 @@ var player = {
 
           // Assign check coordinates
           console.log(new_pos)
+<<<<<<< HEAD
+=======
+          this.move();
+
+>>>>>>> master
           var x = new_pos[0][0];
           var y = new_pos[0][1];
 
 // RUN EDGE CHECK
 if ( (x < 1 || x > this.board_size) || (y < 1 || y > this.board_size) ) {
+<<<<<<< HEAD
     console.log("You hit a wall! Try again.")
+=======
+    console.log("You hit a wall! Try again.");
+>>>>>>> master
   };
 
 
@@ -225,6 +238,7 @@ player.move();
 
 
 
+<<<<<<< HEAD
 // CREATE BOARD GRID FROM INPUT SIZE
 var coordinates = [];
 function gridGen(size){
@@ -278,16 +292,79 @@ console.log (treasure_coord)
 console.log (healthpacks)
 console.log (bomb_coord)
 console.log (coordinates)
+=======
+// // CREATE BOARD GRID FROM INPUT SIZE
+// var coordinates = [];
+// function gridGen(size){
+//   // Make list of all possible coordinates based on size
+//   for (var h = 1; h <= size; h++) {
+//       for (var w = 1; w <= size; w++) {
+//       coordinates.push([h,w])
+//       }
+//     }
+// };
+
+// // RANDOM ASSIGN BOMBS
+// var bomb_coord = [];
+// function bombs(amount){
+//   for (var b = 1; b <= amount; b++) {
+//     i = Math.floor(Math.random() * coordinates.length)
+//     bomb_coord.push(coordinates.splice(i,1)[0])
+//   }
+// };
+
+// // RANDOM ASSIGN HEALTHPACKS
+// healthpack_coord = []
+// function health(amount){
+//   for (var b = 1; b <= amount; b++) {
+//     i = Math.floor(Math.random() * coordinates.length)
+//     healthpack_coord.push(coordinates.splice(i,1)[0])
+//   }
+// };
+
+// // RANDOM ASSIGN TREASURE
+// treasure_coord = []
+// function treasure() {
+//     i = Math.floor(Math.random() * coordinates.length)
+//     treasure_coord.push(coordinates.splice(i,1)[0])
+// };
+
+// // RANDOM ASSIGN PLAYER STARTING POINT
+
+// player_start = []
+// function player() {
+//     i = Math.floor(Math.random() * coordinates.length)
+//     player_start.push(coordinates.splice(i,1)[0])
+// };
+
+// gridGen(10)
+// bombs(3)
+// health(1)
+// treasure()
+// player()
+// console.log (treasure_coord)
+// console.log (healthpacks)
+// console.log (bomb_coord)
+// console.log (coordinates)
+>>>>>>> master
 
 
 
 
+<<<<<<< HEAD
 console.log ("Remaining Coordinates " + coordinates)
+=======
+// console.log ("Remaining Coordinates " + coordinates)
+>>>>>>> master
 
 
 
 
+<<<<<<< HEAD
 Refactored Code
+=======
+// Refactored Code
+>>>>>>> master
 
 
 
@@ -296,6 +373,7 @@ Refactored Code
 
 // Reflection
 //
+<<<<<<< HEAD
 //What was the most difficult part of this challenge?
 
 Building out and testing all the functions and then finding out I didn't know how to prompt in node, which made me hit a wall after hours and hours of wor. I still need to figure it out and finish this.
@@ -311,6 +389,9 @@ I used some of the math functions to get random array values.
 How can you access and manipulate properties of objects?
 With dot notation.
 
+=======
+//
+>>>>>>> master
 //
 //
 //
