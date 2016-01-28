@@ -52,3 +52,6 @@ A primary key is a unique signifier in one database. A foreign key references th
 You can select it with query functions, most notably with:
 SELECT column_name FROM database_name
 and then you can add different selectors and qualifiers.
+
+###My Schema
+![My Schema](jcase_database_schema.png)
